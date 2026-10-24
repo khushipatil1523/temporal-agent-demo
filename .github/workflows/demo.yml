@@ -1,1 +1,13 @@
+name: Demo Test Workflow
 
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate a test failure
+        run: |
+          echo "Testing the Temporal AI Agent"
+          exit 1
